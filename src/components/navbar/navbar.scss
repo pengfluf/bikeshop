@@ -1,0 +1,10 @@
+.navbar {
+  position: absolute;
+  z-index: 2;
+  top: 5px;
+
+  width: 100%;
+  @media (min-width: 992px) {
+    top: 14px;
+  }
+}

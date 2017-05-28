@@ -1,0 +1,255 @@
+@import "../../common/styles/variables.scss";
+
+.carousel {
+  overflow: hidden;
+
+  width: 100vw;
+  height: 100vh;
+  max-height: 980px;
+
+  @media (min-width: 768px) {
+    height: 100vh;
+  }
+
+  @media (min-width: 992px) {
+  }
+
+  @media (min-width: 1200px) {
+    height: auto;
+  }
+
+  &__scroll-icon {
+    @media (min-width: 992px) {
+      position: absolute;
+      bottom: 3.4%;
+      left: 48.65%;
+
+      width: 66px;
+      height: 77px;
+
+      background-image: url("sprite.png");
+      background-position: 0 23.11828%;
+      background-size: 242.424242%;
+    }
+  }
+
+  &::before {
+  }
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+
+    display: block;
+
+    width: 100vw;
+    height: 2px;
+
+    content: "";
+
+    background-color: #aba8a6;
+  }
+
+  &__content {
+    max-height: 100vh;
+    @media (min-width: 1200px) {
+      max-height: none;
+    }
+  }
+
+  &__item {
+    transition: all 1s;
+    img {
+      max-width: none;
+      @media (min-width: 768px) {
+        max-width: none;
+      }
+
+      @media (min-width: 992px) {
+      }
+
+      @media (min-width: 1200px) {
+      }
+    }
+  }
+
+  &__control {
+    position: absolute;
+
+    display: none;
+
+    cursor: pointer;
+    @media (min-width: 992px) {
+      bottom: 46.837%;
+
+      display: inherit;
+
+      width: 62px;
+      height: 62px;
+    }
+
+    &--prev {
+      left: 21px;
+      &:hover {
+        background-position: 0 42.118863%;
+      }
+    }
+
+    &--next {
+      right: 21px;
+      &:hover {
+        background-position: 0 74.160207%;
+      }
+    }
+  }
+
+  &__caption {
+    position: absolute;
+    top: 40vh;
+
+    width: 100vw;
+
+    text-align: center;
+
+    @media (min-width: 1200px) {
+      top: 40.9%;
+    }
+
+
+    &-title {
+      font-size: 32px;
+      font-weight: 700;
+
+      text-transform: uppercase;
+
+      color: white;
+      @media (min-width: 768px) {
+        font-size: 50px;
+      }
+    }
+
+    &-text {
+      font-size: 25px;
+      font-weight: 100;
+
+      margin-top: 2vh;
+
+      letter-spacing: 0.2px;
+
+      color: white;
+
+      @media (min-width: 768px) {
+        font-size: 35px;
+      }
+
+      @media (min-width: 1200px) {
+        font-size: 28px;
+
+        margin-top: 17px;
+        margin-left: 9px;
+      }
+
+      &--highlighted {
+        color: $yellow;
+      }
+    }
+  }
+
+  &__indicators {
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+
+    display: flex;
+
+    width: 100%;
+    max-width: 60%;
+
+    list-style: none;
+
+    flex-wrap: nowrap;
+
+    li {
+      z-index: 2;
+
+      width: 100%;
+      height: 4px;
+
+      transition: all 1s;
+
+      background-color: transparent;
+    }
+
+    button {
+      font-size: 0;
+
+      position: absolute;
+
+      width: 100%;
+      height: 4px;
+
+      border: none;
+      outline: none;
+      background-color: transparent;
+    }
+    .slick-active {
+      background-color: $yellow;
+    }
+  }
+}
+
+.button--carousel {
+  position: absolute;
+  right: 30vw;
+  bottom: 25%;
+  left: 30vw;
+
+  padding-top: 14px;
+  padding-right: 24px;
+  padding-bottom: 11px;
+  padding-left: 25px;
+
+  cursor: pointer;
+  text-align: center;
+
+  color: $yellow;
+  border-color: black;
+  border-radius: 10px;
+  background-color: black;
+
+  @media (min-width: 768px) {
+    right: 35vw;
+    left: 35vw;
+
+    padding-top: 18px;
+    padding-bottom: 15px;
+  }
+
+  @media (min-width: 768px) {
+    right: 40vw;
+    left: 40vw;
+
+    padding-top: 18px;
+    padding-bottom: 15px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 12px;
+
+    right: auto;
+    bottom: 41.532%;
+    left: auto;
+    left: 46.511%;
+
+    padding-top: 14px;
+    padding-right: 24px;
+    padding-bottom: 11px;
+    padding-left: 25px;
+  }
+
+  &:hover {
+    color: black;
+    border-color: $yellow;
+    background-color: $yellow;
+  }
+}

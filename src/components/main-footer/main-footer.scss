@@ -1,0 +1,12 @@
+@import "../../common/styles/variables.scss";
+
+.main-footer {
+  display: none;
+
+  background-color: $yellow;
+  @media (min-width: 992px) {
+    display: block;
+
+    padding-bottom: 14px;
+  }
+}

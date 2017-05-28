@@ -1,0 +1,50 @@
+
+.logo,
+.logo-black,
+.icon-scroll,
+.icon-carousel-prev--active,
+.icon-carousel-prev,
+.icon-carousel-next--active,
+.icon-carousel-next,
+.icon-basket,
+.icon-option {
+  max-width: 100%;
+
+  background-image: url("sprite.png");
+  background-size: 100%;
+}
+
+.logo {
+  background-position: 0 0;
+  background-size: 100%;
+}
+.logo-black {
+  width: 115px;
+  height: 36px;
+
+  background-position: 0 -50px;
+  background-size: 139.5%;
+}
+.icon-scroll {
+  background-position: 0 23.11828%;
+  background-size: 242.424242%;
+}
+.icon-carousel-prev {
+  background-position: 0 58.139535%;
+  background-size: 258.064516%;
+}
+.icon-carousel-next {
+  background-position: 0 90.180879%;
+  background-size: 258.064516%;
+}
+.icon-basket {
+  width: 26px;
+  height: 26px;
+
+  background-position: 0 97.163121%;
+  background-size: 615.384615%;
+}
+.icon-option {
+  background-position: 0 100%;
+  background-size: 888.888889%;
+}
