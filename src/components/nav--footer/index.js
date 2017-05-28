@@ -1,1 +1,0 @@
-import './nav--footer.scss';
